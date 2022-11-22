@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Ex-2</title>
+</head>
+<body>
+    <form name="form1" method="post">
+        <input type="number" name="txtm1" placeholder="Marks 01"> <br>
+        <input type="number" name="txtm2" placeholder="Marks 02"> <br>
+        <input type="submit" name="btntotal" value="Total" onclick="total()">
+    </form>
+
+    <script>
+
+        function total(){
+            let mk1 = parseInt(document.form1.txtm1.value); 
+                              //document.formName.inputName.value
+            let mk2 = parseInt(document.form1.txtm2.value);
+
+            let total = mk1 + mk2;
+
+            document.write(total);
+        }
+
+        
+
+    </script>
+</body>
+</html>
